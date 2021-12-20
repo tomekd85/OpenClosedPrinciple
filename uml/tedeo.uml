@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.tedeo</OriginalElement>
+  <nodes>
+    <node x="333.7946428571429" y="164.0">org.tedeo.db</node>
+    <node x="-86.5" y="380.0">org.tedeo.pdfview</node>
+    <node x="340.2946428571429" y="55.0">org.tedeo.interactor</node>
+    <node x="-21.125" y="55.0">org.tedeo.controller</node>
+    <node x="104.5" y="164.0">org.tedeo.screenpresenter</node>
+    <node x="-169.125" y="174.5">org.tedeo.printerpresenter</node>
+    <node x="63.375" y="380.0">org.tedeo.webview</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.tedeo.printerpresenter" target="org.tedeo.pdfview" relationship="CREATE">
+      <point x="72.125" y="11.0" />
+      <point x="-29.5" y="201.0" />
+      <point x="-29.5" y="256.75" />
+      <point x="-14.5" y="13.5" />
+    </edge>
+    <edge source="org.tedeo.controller" target="org.tedeo.screenpresenter" relationship="CREATE">
+      <point x="52.5" y="6.5" />
+      <point x="107.375" y="143.0" />
+      <point x="141.625" y="143.0" />
+      <point x="-58.875" y="13.5" />
+    </edge>
+    <edge source="org.tedeo.printerpresenter" target="org.tedeo.controller" relationship="DEPENDENCY">
+      <point x="84.0" y="15.0" />
+      <point x="11.375" y="118.0" />
+      <point x="21.375" y="118.0" />
+      <point x="21.375" y="72.0" />
+      <point x="-44.375" y="1.5" />
+    </edge>
+    <edge source="org.tedeo.controller" target="org.tedeo.controller" relationship="DEPENDENCY">
+      <point x="13.5" y="-15.5" />
+      <point x="68.375" y="-9.0" />
+      <point x="93.375" y="-9.0" />
+      <point x="38.5" y="-14.5" />
+    </edge>
+    <edge source="org.tedeo.controller" target="org.tedeo.interactor" relationship="CREATE">
+      <point x="38.0" y="15.5" />
+      <point x="92.875" y="76.5" />
+      <point x="416.2946428571429" y="76.5" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="org.tedeo.interactor" target="org.tedeo.db" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="27.5" y="15.5" />
+    </edge>
+    <edge source="org.tedeo.interactor" target="org.tedeo.controller" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="416.2946428571429" y="60.0" />
+      <point x="92.875" y="60.0" />
+      <point x="38.0" y="15.5" />
+    </edge>
+    <edge source="org.tedeo.screenpresenter" target="org.tedeo.webview" relationship="CREATE">
+      <point x="-45.875" y="-14.5" />
+      <point x="154.625" y="288.0" />
+      <point x="173.625" y="288.0" />
+      <point x="36.75" y="15.5" />
+    </edge>
+    <edge source="org.tedeo.screenpresenter" target="org.tedeo.controller" relationship="DEPENDENCY">
+      <point x="-48.0" y="15.5" />
+      <point x="152.5" y="130.0" />
+      <point x="118.5" y="130.0" />
+      <point x="63.625" y="-0.5" />
+    </edge>
+    <edge source="org.tedeo.controller" target="org.tedeo.pdfview" relationship="DEPENDENCY">
+      <point x="-14.375" y="3.5" />
+      <point x="40.5" y="244.0" />
+      <point x="40.5" y="380.0" />
+      <point x="55.5" y="-15.5" />
+    </edge>
+    <edge source="org.tedeo.db" target="org.tedeo.db" relationship="DEPENDENCY">
+      <point x="-27.5" y="15.5" />
+      <point x="361.2946428571429" y="215.0" />
+      <point x="313.7946428571429" y="215.0" />
+      <point x="313.7946428571429" y="179.5" />
+      <point x="-55.0" y="-0.0" />
+    </edge>
+    <edge source="org.tedeo.controller" target="org.tedeo.printerpresenter" relationship="CREATE">
+      <point x="-60.375" y="3.5" />
+      <point x="67.125" y="-4.0" />
+    </edge>
+    <edge source="org.tedeo.controller" target="org.tedeo.webview" relationship="DEPENDENCY">
+      <point x="22.625" y="9.5" />
+      <point x="77.5" y="196.0" />
+      <point x="86.5" y="196.0" />
+      <point x="-50.375" y="-1.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="228.0" y="144.0" />
+  <SelectedNodes>
+    <node>org.tedeo.db</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
